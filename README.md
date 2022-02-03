@@ -1,3 +1,13 @@
 ﻿# Phaser Template using Vite as bundler and TypeScript
  
- Example template that uses Phaser for web games
+ A sample Phaser Game that use rexUI to make UI components
+ 
+ ## How to run
+ ```
+ npm run dev
+ ```
+ 
+ ## Where to store
+ ```
+ public\
+ ```
