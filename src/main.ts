@@ -1,6 +1,8 @@
 import Phaser from 'phaser'
 import RexUIPlugin from 'phaser3-rex-plugins/templates/ui/ui-plugin.js';
+import BadgeScene from './scenes/Badge';
 import HelloWorldScene from './scenes/HelloWorldScene'
+import Preload from './scenes/Preload';
 
 const config = {
 	type: Phaser.AUTO,
@@ -21,7 +23,7 @@ const config = {
 			gravity: { y: 0 }
 		}
 	},
-	scene: [HelloWorldScene]
+	scene: [Preload, BadgeScene]
 }
 
 export default new Phaser.Game(config)
