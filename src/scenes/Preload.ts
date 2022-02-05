@@ -22,6 +22,10 @@ export default class Preload extends Phaser.Scene
         this.load.atlasXML('greySheet', 'sprites/kenney/greySheet.png', 'sprites/kenney/greySheet.xml')
         this.load.atlasXML('redSheet', 'sprites/kenney/redSheet.png', 'sprites/kenney/redSheet.xml')
         this.load.atlasXML('yellowSheet', 'sprites/kenney/yellowSheet.png', 'sprites/kenney/yellowSheet.xml')
+        this.load.spritesheet('cryogui', 'sprites/cryo/gui/GUI_4x.png', {
+            frameWidth: 16,
+            frameHeight: 16
+        });
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("badge"));
     }
